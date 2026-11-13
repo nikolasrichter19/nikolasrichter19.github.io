@@ -1,5 +1,3 @@
 title: Nikolas Richter
-description: Medicine, finance and AI. Essays and projects.
+description: Projects and thoughts on finance, AI and medicine.
 theme: minima
-header_pages:
-  - inference/index.md
