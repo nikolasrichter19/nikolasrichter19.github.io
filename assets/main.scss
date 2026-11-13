@@ -1,10 +1,10 @@
 ---
 ---
 
-// Schriften bewusst ohne externe Anbieter (keine Google Fonts):
-// Systemschrift für den Text, Systemmonospace für Labels und Metazeilen.
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, "Helvetica Neue", Arial, sans-serif;
-$mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+// Schrift bewusst ohne externe Anbieter (keine Google Fonts): Arial überall,
+// auch für Labels und Metazeilen (Nikolas, 14.11.: „Arial oder sowas Basic“).
+$base-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$mono: $base-font-family;
 $ink: #1f2328;
 $muted: #6e7781;
 $line: #e4e4e4;
@@ -97,13 +97,21 @@ a:visited {
 
 .meta {
   font-family: $mono;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   color: $muted;
   margin-bottom: 14px;
 }
 
 .meta a,
 .meta a:visited {
+  color: $muted;
+}
+
+.note {
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid $line;
+  font-size: 0.85rem;
   color: $muted;
 }
 

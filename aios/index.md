@@ -37,9 +37,16 @@ An agent is a model plus its harness: the loop, tools, context, rules and checks
 
 Why the first result overstates what the loop learned, and what five weekly runs showed, is the subject of the next part of [Inference](../inference/).
 
+## Selected findings
+
+- **Six days.** On 2 October the system started assembling overviews from a fixed set of building blocks. Six days later Anthropic shipped Claude Dashboards, built on the same principle. Most scaffolding ages that fast; [Part 1](../inference/part-01.html) is about what doesn't.
+- **Worse than the original.** In one weekly Genesis run, all three proposed rewrites of a rule performed worse in replay than the rule they were meant to replace. They read well; only the measurement showed otherwise.
+
 ## Principles
 
 1. Check the platform's changelog before building anything; what is coming anyway does not justify the effort.
 2. Content comes before work on the system itself.
 3. Measure assumptions before they carry decisions.
 4. Knowledge belongs in files, not in applications.
+
+<p class="note">This page is an overview. Implementation details, configuration and security specifics stay private; selected parts are explained in depth in <a href="../inference/">Inference</a>.</p>
