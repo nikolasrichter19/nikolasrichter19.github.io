@@ -1,7 +1,8 @@
-# Inference
+# Nikolas Richter
 
-Essays on where artificial intelligence is heading and what that means for work and learning, by Nikolas Richter.
+Personal site: essays and projects between medicine, finance and AI.
 
-Read online: https://nikolasrichter19.github.io/inference/
+Read online: https://nikolasrichter19.github.io/
 
-- Part 1: [A Six-Day Lead](part-01.md) (13 November 2026)
+- Inference, a series of essays: https://nikolasrichter19.github.io/inference/
+- Part 1: [A Six-Day Lead](inference/part-01.md) (13 November 2026)

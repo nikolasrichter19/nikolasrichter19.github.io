@@ -1,2 +1,6 @@
-title: Inference
-description: Essays on where AI is heading and what that means for work and learning.
+title: Nikolas Richter
+description: Medicine, finance and AI. Essays and projects.
+author: Nikolas Richter
+theme: minima
+header_pages:
+  - inference/index.md
