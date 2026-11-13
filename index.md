@@ -13,7 +13,7 @@ title: Nikolas Richter
 
 <p class="meta">Self-built agent harness on Claude Code · since June 2026</p>
 
-A system of my own agents with a verification layer around them: scheduled cloud agents, sub-agents that check each other's work, and a self-improvement loop that has to beat a held-out test before anything changes.
+A system of my own agents with a verification layer around them: scheduled cloud agents, sub-agents that check each other's work, and a self-improvement loop that measures every proposed change before I decide on it.
 
 <p class="more"><a href="aios/">Architecture and results →</a></p>
 

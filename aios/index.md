@@ -19,7 +19,7 @@ An agent is a model plus its harness: the loop, tools, context, rules and checks
 
 - **Knowledge base.** Plain markdown files under version control: profile, rules, skills and project notes. Every session starts by reading the rules, so behaviour is defined in files, not in an app.
 - **Scheduled agents.** Cloud agents run on a schedule without my laptop. The daily briefing has run 117 days in a row as of November 2026.
-- **Specialised sub-agents.** Parallel researchers, one per sub-question; a fact-checker that verifies each load-bearing claim at its primary source; reviewers that never see the session they judge and run on a different model than the one that produced the work.
+- **Specialised sub-agents.** Parallel researchers, one per sub-question; a fact-checker that verifies each load-bearing claim at its primary source; reviewers that never see the session they judge and usually run on a different model than the one that produced the work.
 - **Isolation.** Cloud runs push only to their own branches. A deterministic merge accepts exactly one file per run and rejects the run if it touched anything else, so the blast radius of a cloud agent is a single file.
 - **Policy as code.** Rules that matter are enforced by deterministic hooks before every tool call, not by instructions in a prompt: a path boundary, no deletions, and outbound connections only to destinations named in advance. The hook configuration is protected against the agent itself.
 
@@ -32,7 +32,7 @@ An agent is a model plus its harness: the loop, tools, context, rules and checks
 ## Genesis: the self-improvement loop
 
 - **Offline runs.** A model generates variants of one component, each is scored on a training split, the best ones go on, and the winner is judged exactly once on a held-out split against a bar fixed before the run. The first run gained 42 points on the held-out split.
-- **Weekly cloud runs.** The fuel is my own corrections: every time I correct the AI, that exchange becomes a test case with a known right answer. The loop picks the most frequent error type, writes three variants of the responsible rule, replays real situations against each and lets a blind judge decide. Since November it also tests on a held-out window it only reads after the variants are frozen.
+- **Weekly cloud runs.** The fuel is my own corrections: every time I correct the AI, that exchange becomes a test case with a known right answer. The loop picks the most frequent error type, writes three variants of the responsible rule, replays real situations against each and lets a blind judge decide. From mid-November on, each run is also tested on a held-out window that the loop only reads after the variants are frozen.
 - **The rule above all.** The loop never changes its own yardstick, and nothing merges without my approval.
 
 Why the first result overstates what the loop learned, and what five weekly runs showed, is the subject of the next part of [Inference](../inference/).
