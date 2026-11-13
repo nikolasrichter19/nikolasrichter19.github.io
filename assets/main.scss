@@ -1,106 +1,138 @@
 ---
 ---
 
+// Schriften bewusst ohne externe Anbieter (keine Google Fonts):
+// Systemschrift für den Text, Systemmonospace für Labels und Metazeilen.
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, "Helvetica Neue", Arial, sans-serif;
+$mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+$ink: #1f2328;
+$muted: #6e7781;
+$line: #e4e4e4;
+$accent: #0b5cd5;
+
 @import "minima";
 
+body {
+  color: $ink;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:visited {
+  color: $accent;
+}
+
 .site-header {
-  border-top: 10px solid #1f2328;
-  border-bottom: 1px solid #e4e4e4;
+  border-top: 10px solid $ink;
+  border-bottom: 1px solid $line;
   min-height: 64px;
 }
 
 .site-title,
 .site-title:visited {
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  color: #1f2328;
+  font-weight: 650;
+  letter-spacing: -0.4px;
+  color: $ink;
   line-height: 64px;
 }
 
 .page-content {
-  padding: 48px 0 56px;
+  padding: 56px 0 64px;
 }
 
 .tagline {
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
+  font-family: $mono;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #57606a;
-  margin-bottom: 12px;
+  color: $muted;
+  margin-bottom: 14px;
 }
 
 .intro {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #1f2328;
-  margin-bottom: 40px;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: $ink;
+  margin-bottom: 44px;
+  max-width: 40em;
 }
 
-.post-content h2,
+.page-content h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  margin-bottom: 12px;
+}
+
 .page-content h2 {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
+  font-family: $mono;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #57606a;
-  border-bottom: 1px solid #e4e4e4;
+  color: $muted;
+  border-bottom: 1px solid $line;
   padding-bottom: 8px;
-  margin-top: 48px;
+  margin-top: 52px;
+  margin-bottom: 20px;
 }
 
 .page-content h3 {
-  font-size: 1.35rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 650;
+  letter-spacing: -0.3px;
   margin-bottom: 4px;
 }
 
+.page-content h3 a,
+.page-content h3 a:visited {
+  color: $ink;
+}
+
+.page-content h3 a:hover {
+  color: $accent;
+  text-decoration: none;
+}
+
 .meta {
-  font-size: 0.9rem;
-  color: #6e7781;
+  font-family: $mono;
+  font-size: 0.78rem;
+  color: $muted;
   margin-bottom: 14px;
+}
+
+.meta a,
+.meta a:visited {
+  color: $muted;
+}
+
+.more {
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .page-content li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
-details {
-  margin: 4px 0 8px;
-}
-
-details summary {
-  cursor: pointer;
-  color: #2a7ae2;
-  font-size: 0.95rem;
-  font-weight: 600;
-  list-style: none;
-  margin-bottom: 14px;
-}
-
-details summary::-webkit-details-marker {
-  display: none;
-}
-
-details summary::before {
-  content: "+ ";
-}
-
-details[open] summary::before {
-  content: "− ";
+.page-content code {
+  font-family: $mono;
 }
 
 .site-footer {
-  border-top: 1px solid #e4e4e4;
+  border-top: 1px solid $line;
   padding: 24px 0;
 }
 
 .footer-line {
   margin: 0;
-  font-size: 0.85rem;
-  color: #6e7781;
+  font-family: $mono;
+  font-size: 0.8rem;
 }
 
-.footer-line .sep {
-  margin: 0 6px;
+.footer-line a,
+.footer-line a:visited {
+  color: $muted;
 }
