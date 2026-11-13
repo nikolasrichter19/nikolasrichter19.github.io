@@ -44,9 +44,9 @@ Why the first result overstates what the loop learned, and what five weekly runs
 
 ## Principles
 
-1. Check the platform's changelog before building anything; what is coming anyway does not justify the effort.
-2. Content comes before work on the system itself.
-3. Measure assumptions before they carry decisions.
-4. Knowledge belongs in files, not in applications.
+1. **Changelog first.** Before building anything, check what the platform is about to ship; what is coming anyway does not justify the effort.
+2. **Content before system.** Work on the system itself comes second.
+3. **Measure, then decide.** Assumptions are measured before they carry decisions.
+4. **Knowledge in files.** Knowledge belongs in plain files, not in applications.
 
 <p class="note">This page is an overview. Implementation details, configuration and security specifics stay private; selected parts are explained in depth in <a href="../inference/">Inference</a>.</p>
