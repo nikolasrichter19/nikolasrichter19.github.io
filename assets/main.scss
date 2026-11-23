@@ -125,6 +125,35 @@ a:visited {
   line-height: 1.6;
 }
 
+.parts {
+  list-style: none;
+  margin: 8px 0 24px;
+  padding: 0;
+}
+
+.page-content .parts li {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.part-label {
+  flex: 0 0 7.5rem;
+  font-family: $mono;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $muted;
+}
+
+.part-date {
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: $muted;
+  white-space: nowrap;
+}
+
 .page-content code {
   font-family: $mono;
 }

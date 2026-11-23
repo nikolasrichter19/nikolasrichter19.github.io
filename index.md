@@ -25,6 +25,7 @@ A system of my own agents with a verification layer around them: scheduled cloud
 
 Where AI is heading and what that means for work and learning, argued from my own measurements rather than from announcements. The parts alternate between reports from practice and applications in finance and medicine.
 
-1. [A Six-Day Lead: Four Months with a Self-Built AI Operating System](inference/part-01.html) · 13 November 2026
-
-Interlude: [The Easiest Case: What the Riemann Proof Says About Superintelligence, and What It Does Not](inference/interlude-01.html) · 24 November 2026
+<ul class="parts">
+  <li><span class="part-label">Part 1</span><a href="inference/part-01.html">A Six-Day Lead</a><span class="part-date">13 November 2026</span></li>
+  <li><span class="part-label">Interlude</span><a href="inference/interlude-01.html">The Easiest Case</a><span class="part-date">24 November 2026</span></li>
+</ul>
