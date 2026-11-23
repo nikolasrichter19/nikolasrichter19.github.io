@@ -21,4 +21,6 @@ Each part starts from something I built or measured myself. Every load-bearing c
 
 1. [A Six-Day Lead: Four Months with a Self-Built AI Operating System](part-01.html) · 13 November 2026
 
+Interlude: [The Easiest Case: What the Riemann Proof Says About Superintelligence, and What It Does Not](interlude-01.html) · 24 November 2026
+
 <p class="meta">Next: an AI system that is supposed to improve itself, and how to tell whether it did.</p>
